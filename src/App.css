@@ -1,38 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  padding-top: 30px;
+  background-image: url("https://static.videezy.com/system/resources/thumbnails/000/054/583/original/Weather-news-intro-loop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.forecastContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weatherCard {
+  margin-top: 20vh;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+.inputContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.inputs {
+  height: 50px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 350px;
+}
+
+.inputContainer button {
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 350px;
+  margin-top: 20px;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: rgb(218, 218, 218);
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  height: 20px;
+  border: 0;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
 }
